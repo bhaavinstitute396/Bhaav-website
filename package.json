@@ -12,7 +12,6 @@
   "dependencies": {
     "@react-three/drei": "^10.7.8",
     "@react-three/fiber": "^9.7.0",
-    "@rolldown/binding-win32-x64-msvc": "^1.2.8",
     "@splinetool/react-spline": "^4.1.0",
     "@splinetool/runtime": "^2.0.43",
     "clsx": "^2.1.1",
