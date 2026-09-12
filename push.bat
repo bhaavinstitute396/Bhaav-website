@@ -1,15 +1,16 @@
 @echo off
-title Push to GitHub (Bhaav-website)
+title Auto Push to GitHub & Live Deploy
 echo ========================================================
-echo Pushing 3D Website to:
-echo https://github.com/bhaavinstitute396/Bhaav-website.git
+echo Saving changes and publishing to GitHub...
 echo ========================================================
 echo.
-git push -u origin main
+git add .
+git commit -m "Update website content"
+git push origin main
 echo.
 if %errorlevel% equ 0 (
-    echo [SUCCESS] Pushed successfully to GitHub!
+    echo [SUCCESS] Changes pushed! Vercel is now deploying your live site.
 ) else (
-    echo [INFO] If prompted above, please complete the sign-in with your browser.
+    echo [INFO] Everything is up-to-date or already pushed.
 )
 pause
